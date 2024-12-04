@@ -40,14 +40,27 @@ class MealPlan {
     displayInfo() {
         // this updates the form display with the meal plan
         //Made it print multiple times for all the days ehehehehehe I love this funny function shoutouts to Will
-        display.innerHTML += `<p>Sunday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
-        display.innerHTML += `<p>Monday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
-        display.innerHTML += `<p>Tuesday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
-        display.innerHTML += `<p>Wednesday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
-        display.innerHTML += `<p>Thursday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
-        display.innerHTML += `<p>Friday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
-        display.innerHTML += `<p>Saturday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`; // add meals to HTML
+        var newWindow = window.open();
+        newWindow.document.write(display.innerHTML += `<p>Sunday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>
+          <p>Monday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>
+          <p>Tuesday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>
+          <p>Wednesday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>
+          <p>Thursday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>
+          <p>Friday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>
+          <p>Saturday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
     }
+
+    //var newWindow = window.open();
+        //newWindow.document.write(display.innerHTML += `<p>Sunday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
+        //newWindow.document.write(display.innerHTML += `<p>Monday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
+        //newWindow.document.write(display.innerHTML += `<p>Tuesday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
+        //newWindow.document.write(display.innerHTML += `<p>Wednesday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
+        //newWindow.document.write(display.innerHTML += `<p>Thursday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`);
+        //newWindow.document.write(display.innerHTML += `<p>Friday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
+        //newWindow.document.write(display.innerHTML += `<p>Saturday:<br> Breakfast: ${this.breakfast}<br>Snack: ${this.snack}<br>Lunch: ${this.lunch}<br>SnackTwo: ${this.snacktwo}<br>Dinner: ${this.dinner}</p>`); 
+    //}
+
+
 }
 
 // Button handler to HTML
